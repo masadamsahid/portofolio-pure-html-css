@@ -608,7 +608,7 @@ main *{
     background-color: transparent;
     background-image: url("https://image.freepik.com/free-vector/development-concept-illustration_114360-562.jpg");
     background-repeat: no-repeat;
-    background-size: 600px;
+    background-size: 500px;
     background-position: right;
 }
 
@@ -632,6 +632,11 @@ main *{
     border-color: #ff0080;
 }
 
+.cta-btn:hover a{
+    text-decoration: underline;
+}
+
+
 main aside{
     position: sticky;
     top: 8em;
@@ -648,14 +653,18 @@ main article{
     margin: 1em 0;
     border-radius: .5em;
     min-height: 5em;
-    box-shadow: 0 0 5px 0 #ee00ff;
+    box-shadow: 0 0 5px 0 #ff0080;
+}
+
+article h1{
+    font-size: 5em;
 }
 
 .aside-avatar{
     width: 8em;
     border-radius: 50%;
-    border: .5em solid #ee00ff;
-    box-shadow: 0 0 5px 0 #ee00ff;
+    border: .5em solid #ff0080;
+    box-shadow: 0 0 5px 0 #ff0080;
     margin: 1em auto;
 }
 
