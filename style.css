@@ -650,14 +650,21 @@ main aside{
 
 main article{
     background: white;
-    margin: 1em 0;
+    margin: 3em 0;
     border-radius: .5em;
     min-height: 5em;
     box-shadow: 0 0 5px 0 #ff0080;
+    padding: 3em .5em;
 }
 
-article h1{
-    font-size: 5em;
+#techs h1{
+    color: #ff0080;
+    font-size: 3em;
+    padding: 1em 1em .5em;
+    margin: .5em auto;
+    width: fit-content;
+    border-bottom: 2px solid #ff0080;
+    text-align: center;
 }
 
 .aside-avatar{
@@ -724,6 +731,57 @@ article h1{
     color: white;
     background-color: #ee00ff;
     border-radius: .25em;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 25%;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-illustration{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 0, 128, .4);
+    transition: all 0.3s;
+}
+
+.card-illustration:hover{
+    background-color: white;
+}
+
+.card-illustration i{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 10em;
+    width: 100%;
+}
+
+.card-illustration:hover .fa-html5{
+    color: orangered;
+}
+
+.card-illustration:hover .fa-css3-alt{
+    color: dodgerblue;
+}
+
+.card-illustration:hover .fa-js{
+    color: yellow;
 }
 
 /*Breakpoint untuk Tablet*/
