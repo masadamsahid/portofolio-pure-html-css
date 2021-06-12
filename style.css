@@ -523,6 +523,9 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 :root{
     --warna_gradasi_1: linear-gradient(10deg, #ff0080, #ee00ff);
@@ -536,6 +539,7 @@ a{
 header{
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 nav{
@@ -839,6 +843,49 @@ article p{
 .card:hover .card-text{
     background-color: #ff0080;
     color: white;
+}
+
+
+footer{
+    background-color: rgba(255, 0, 128, .7);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .nav-logo{
+    border-bottom: 5px solid white;
+    width: 30%;
+    margin: 0 auto;
+}
+
+footer .nav-logo .nav-img{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+}
+
+footer ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 40%;
+    margin: 1em auto 0;
+}
+
+footer ul .nav-item{
+    flex: 1;
+
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+    margin: 2em auto;
 }
 
 /*Breakpoint untuk Tablet*/
