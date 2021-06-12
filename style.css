@@ -543,7 +543,7 @@ nav{
     width: 100%;
     background-image: var(--warna_gradasi_1);
     box-shadow: 0 2px 1em #ff0080;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .nav-logo{
@@ -657,14 +657,52 @@ main article{
     padding: 3em .5em;
 }
 
-#techs h1{
+article h1{
     color: #ff0080;
     font-size: 3em;
-    padding: 1em 1em .5em;
-    margin: .5em auto;
+    padding: 0 1em .1em;
+    margin: 0 auto .5em;
     width: fit-content;
     border-bottom: 2px solid #ff0080;
     text-align: center;
+}
+
+article p{
+    width: 60%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.about-me-img{
+    width: fit-content;
+    padding: 0;
+    margin: auto;
+}
+
+.about-me-img img{
+    margin: auto;
+    height: 25em;
+}
+
+.article-sec{
+    margin: auto 1em;
+}
+
+.skills-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.skill-item{
+    margin: 5px;
+    width: 30%;
+}
+
+.skill-item i{
+    margin-right: 1em;
 }
 
 .aside-avatar{
@@ -736,7 +774,7 @@ main article{
 .cards-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -747,6 +785,7 @@ main article{
     width: 25%;
     flex: 1;
     margin: 0 20px;
+    padding: 0;
 }
 
 .card:hover {
@@ -782,6 +821,24 @@ main article{
 
 .card-illustration:hover .fa-js{
     color: yellow;
+}
+
+.card-text{
+    padding: 1em 0;
+    width: fit-content;
+    margin: auto;
+}
+
+.card-text p{
+    width: 80%;
+    font-size: .8em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card:hover .card-text{
+    background-color: #ff0080;
+    color: white;
 }
 
 /*Breakpoint untuk Tablet*/
