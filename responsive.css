@@ -90,7 +90,7 @@
     }
 
     #mobile-hamburger{
-        display: none;
+        display: unset;
     }
 
 }
