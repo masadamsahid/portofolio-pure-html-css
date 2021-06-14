@@ -552,12 +552,14 @@ nav{
 
 .nav-logo{
     flex: 1;
+    padding: 0;
 }
 
 .nav-img{
     color: white;
     margin: auto;
     width: fit-content;
+    padding: 0;
 }
 
 .nav-img a{
@@ -703,6 +705,7 @@ article p{
 .skill-item{
     margin: 5px;
     width: 30%;
+    border: 1px solid gray;
 }
 
 .skill-item i{
@@ -730,7 +733,7 @@ article p{
 
 .aside-info h4{
     border-bottom: .25em solid #ee00ff;
-    width: fit-content;
+    width: 60%;
     margin: 0 auto;
     padding: 0 1em;
     font-size: 100%;
@@ -778,17 +781,15 @@ article p{
 .cards-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 25%;
-    flex: 1;
-    margin: 0 20px;
+    flex: 25%;
+    margin: 20px;
     padding: 0;
 }
 
@@ -845,60 +846,23 @@ article p{
     color: white;
 }
 
-
-footer{
-    background-color: rgba(255, 0, 128, .7);
-    display: flex;
-    flex-direction: column;
-}
-
-footer .nav-logo{
-    border-bottom: 5px solid white;
-    width: 30%;
-    margin: 0 auto;
-}
-
-footer .nav-logo .nav-img{
-    padding: 0;
-    margin: 0 auto;
-    font-size: 3em;
-    font-family: 'Teko', sans-serif;
-}
-
-footer ul{
-    color: white;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    width: 40%;
-    margin: 1em auto 0;
-}
-
-footer ul .nav-item{
-    flex: 1;
-
-}
-
-.copyright{
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: .8em;
-    margin: 2em auto;
-}
-
 table{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 95%;
     margin: 2em auto;
     font-size: .8em;
+    word-break: break-word;
+    text-align: center;
 }
 
 table td, table th{
     border: 1px solid #ddd;
     padding: 8px;
+}
+
+table td *, table th *{
+    margin: auto;
 }
 
 table tr:nth-child(even){background-color: rgba(255,0,128, .2);}
@@ -966,15 +930,90 @@ p span#banyak-orang{
     border: 3px solid rgba(255,0,128,1);
 }
 
-/*Breakpoint untuk Tablet*/
-@media (max-width: 768px) {
-
+footer{
+    background-color: rgba(255, 0, 128, .7);
+    display: flex;
+    flex-direction: column;
 }
 
-/*Breakpoint untuk Smartphone*/
-@media (max-width: 576px) {
-
+footer .nav-logo{
+    border-bottom: 5px solid white;
+    width: 20%;
+    margin: 0 auto;
 }
+
+footer .nav-logo .nav-img{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+}
+
+footer ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 60%;
+    margin: 1em auto 0;
+}
+
+footer ul .nav-item{
+    flex: 25%;
+    margin: auto;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+    margin: 2em auto;
+}
+
+/*SKILL ITEMS BACKGROUND ON HOVER*/
+
+.skill-item:hover{
+    color: white;
+}
+
+.html5:hover{background-color: orangered; border-color: orangered;}
+
+.css3:hover{background-color: dodgerblue; border-color: dodgerblue;}
+
+.js-es6:hover{background-color: yellow; border-color: yellow;}
+
+.bootstrap:hover{background-color: rebeccapurple; border-color: rebeccapurple;}
+
+.php:hover{background-color: mediumpurple; border-color: mediumpurple;}
+
+.MySQL:hover{background-color: cornflowerblue; border-color: cornflowerblue;}
+
+.MongoDB:hover{background-color: forestgreen; border-color: forestgreen;}
+
+.NodeJS:hover{background-color: yellowgreen; border-color: yellowgreen;}
+
+.npm:hover{background-color: red; border-color: red;}
+
+.yarn:hover{background-color: aqua; border-color: aqua;}
+
+.react:hover{background-color: lightskyblue; border-color: lightskyblue;}
+
+.AWS:hover{background-color: orange; border-color: orange;}
+
+.python:hover{background-color: royalblue; border-color: royalblue;}
+
+.java:hover{background-color: chocolate; border-color: chocolate;}
+
+.android:hover{background-color: lightgreen; border-color: lightgreen;}
+
+.ar-vr:hover{background-color: purple; border-color: purple;}
+
+.unity:hover{background-color: black; border-color: black;}
+
+
 
 
 
