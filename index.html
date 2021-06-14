@@ -208,6 +208,47 @@
 
         </article>
 
+        <article>
+
+            <h1>
+                Random Person<br/>Generator
+            </h1>
+
+            <p>Tampilkan sebanyak <span id="banyak-orang">-</span> orang.</p>
+
+            <input id="person-num"
+                   type="range"
+                   name="person-number"
+                   min="1" max="100" value="1"
+                   onchange="fetchPersonAPI();document.getElementById('banyak-orang').innerHTML=document.getElementById('person-num').value"
+            >
+
+            <div id="tampilkan-btn-wrapper">
+                <button class="btn-default" onclick="showPersonData()">
+                    Tampilkan
+                </button>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Foto Profil</th>
+                        <th>Nama Lengkap</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Surel</th>
+                        <th>No. Telp</th>
+                    </tr>
+                </thead>
+
+                <tbody id="person-table">
+                </tbody>
+
+            </table>
+
+        </article>
+
     </div>
 
     <aside>
@@ -263,6 +304,9 @@
         <p>This webpage is developed by Maulana Adam Sahid &copy; 2021</p>
     </div>
 </footer>
+
+<!--  Orang JS  -->
+<script src="orang.js"></script>
 
 </body>
 </html>

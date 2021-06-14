@@ -888,6 +888,68 @@ footer ul .nav-item{
     margin: 2em auto;
 }
 
+table{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: 2em auto;
+    font-size: .8em;
+}
+
+table td, table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: rgba(255,0,128, .2);}
+
+table tr:hover{background-color: #ddd;}
+
+table tr:nth-child(even):hover{background-color: rgba(255,0,128, .5);}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff0080;
+    color: white;
+}
+
+#tampilkan-btn-wrapper{
+    width: fit-content;
+    margin: auto;
+}
+
+.btn-default{
+    cursor: pointer;
+    outline: none;
+    margin: 0;
+    border-radius: .5em;
+    padding: .5em;
+    color: white;
+    font-size: 1em;
+    background-color: rgba(255,0,128, .7);
+    box-shadow: 0 .5em rgba(255,0,128, 1);
+    border: none;
+}
+
+.btn-default:active{
+    box-shadow: none;
+    transform: translateY(.5em);
+}
+
+p span#banyak-orang{
+    margin: 0;
+    color: #ff0080;
+    text-decoration: underline;
+}
+
+#person-num{
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+}
+
 /*Breakpoint untuk Tablet*/
 @media (max-width: 768px) {
 
