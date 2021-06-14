@@ -947,7 +947,23 @@ p span#banyak-orang{
 #person-num{
     display: block;
     width: 50%;
-    margin: 1em auto;
+    height: 1em;
+    margin: 20px auto;
+    -webkit-appearance: none;
+    outline: none;
+    background: rgba(255,0,128, .4);
+    border-radius: 1em;
+}
+
+#person-num::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid rgba(255,0,128,1);
 }
 
 /*Breakpoint untuk Tablet*/

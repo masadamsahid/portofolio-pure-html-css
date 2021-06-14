@@ -29,7 +29,7 @@ function showPersonData(){
         `<tr>
             <td>${indeks}</td>
             <td><img src="${e.picture.large}"></td>
-            <td>${e.name.first + e.name.last}</td>
+            <td>${e.name.first + " " + e.name.last}</td>
             <td>${e.gender}</td>
             <td>${e.email}</td>
             <td>${e.cell}</td>
