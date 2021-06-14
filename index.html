@@ -19,6 +19,7 @@
 <body>
 
 <header>
+
     <nav>
         <div class="nav-logo">
             <div class="nav-img">
@@ -28,7 +29,7 @@
             </div>
         </div>
 
-        <ul>
+        <ul id="float-nav">
             <div class="nav-item">
                 <a href="#about-me"><li>About Me</li></a>
             </div>
@@ -45,6 +46,39 @@
             </div>
         </ul>
     </nav>
+
+    <nav id="mobile-nav">
+        <ul>
+            <div class="nav-item">
+                <a href="#about-me"><li>About Me</li></a>
+            </div>
+            <div class="nav-item">
+                <a href="#skills"><li>Skills</li></a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#techs"><li>Techs</li></a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#get-random-person"><li>Person App</li></a>
+            </div>
+
+            <h1 onclick="toggleMobNav()" class="nav-item" style="width: 100%; padding: 0; cursor: pointer">
+                <li style="text-align: center; margin: 1em auto;">X</li>
+            </h1>
+
+        </ul>
+    </nav>
+
+    <div id="mobile-hamburger" onclick="toggleMobNav()">
+        <div class="hamburger-icon">
+            <div class="garis"></div>
+            <div class="garis"></div>
+            <div class="garis"></div>
+        </div>
+    </div>
+
 </header>
 
 <main>
@@ -58,7 +92,7 @@
                 I do web development, mobile-app, and UI-UX design.
             </p>
             <div class="cta-btn">
-                <a href="#">About Me</a>
+                <a href="#contact-me">Contact Me</a>
             </div>
         </div>
 
@@ -73,7 +107,7 @@
 
             <h1>I'm a Programmer</h1>
             <p>
-                I'm currently attending my third year in Computer and Information System at Vocational College UGM.
+                I'm currently attending my third year in Computer and Information System at Vocational College of UGM.
                 And I have learned and know many programming languages, tools, and technologies.
             </p>
             <p>
@@ -226,7 +260,7 @@
             <input id="person-num"
                    type="range"
                    name="person-number"
-                   min="1" max="100" value="1"
+                   min="1" max="500" value="1"
                    onchange="fetchPersonAPI();document.getElementById('banyak-orang').innerHTML=document.getElementById('person-num').value"
             >
 
@@ -258,7 +292,7 @@
 
     </div>
 
-    <aside>
+    <aside id="contact-me">
         <img class="aside-avatar" alt="avatar" src="https://media-exp1.licdn.com/dms/image/C5603AQE2-ox_80I8Yg/profile-displayphoto-shrink_800_800/0/1619930750668?e=1628726400&v=beta&t=3wGbU4yzgG5XM5W2uBQNrYVQXZqLK2_4TJYpp-ovTh4">
         <div class="aside-info">
 

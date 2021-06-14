@@ -59,7 +59,7 @@
 /*Breakpoint untuk Smartphone*/
 @media (max-width: 576px) {
 
-    nav ul{
+    #float-nav{
         display: none;
     }
 
@@ -87,6 +87,10 @@
 
     footer ul .nav-item{
         flex: 100%;
+    }
+
+    #mobile-hamburger{
+        display: none;
     }
 
 }
